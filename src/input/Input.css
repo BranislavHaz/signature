@@ -1,0 +1,159 @@
+#input {
+  display: flex;
+  justify-content: end;
+  width: 50vw;
+}
+
+#input-wrapper {
+  width: 35vw;
+}
+
+.input-section {
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 3em 1em 3em;
+  padding: 0.5em 2em 2em 2em;
+  padding-bottom: 3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.input-section:last-of-type {
+  margin-bottom: 5em;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #24252d;
+  font-size: 1.1em;
+}
+
+label {
+  display: block;
+  margin-top: 2em;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+input,
+select,
+option {
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.5rem;
+
+  color: rgb(65, 57, 112);
+  border: none;
+  border-radius: 0.2em;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 90%;
+  height: 36px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="color"] {
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  height: 4rem;
+  width: 100%;
+  width: 4rem;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+  border: 0.2rem solid #fff;
+}
+
+::placeholder {
+  color: rgb(110, 110, 110);
+  opacity: 0.5;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+}
+
+.colors-input {
+  width: 60%;
+}
+
+.hexa {
+  padding: 0.4em 0.3em 0 0;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.input-details {
+  background-color: #fff8e6;
+  color: #8e8154;
+  border-left: 1em solid #e2d7bf;
+}
+
+.input-socials {
+  background-color: #dcf7e9;
+  color: #5f9478;
+  border-left: 1em solid #c1dcce;
+}
+
+.input-images {
+  background-color: #ffe1e2;
+  color: #b2807f;
+  border-left: 1em solid #eccfd0;
+}
+
+.input-styles {
+  background-color: #f2f2fe;
+  color: #686d99;
+  border-left: 1em solid #c2c2da;
+}
+
+/**/
+.social-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch {
+  display: inline-block;
+  font-size: 20px;
+  height: 1em;
+  width: 2em;
+  border-radius: 1em;
+}
+
+.turn-on {
+  background: #5f9478;
+}
+
+.turn-off {
+  background: #bebebe;
+}
+
+.switch #slider {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  transition: all 300ms;
+}
+
+.switch input:checked + div {
+  transform: translate3d(100%, 0, 0);
+}
+
+.switch input:checked {
+  background-color: red;
+}
